@@ -21,7 +21,8 @@ else:
    exec_pgm = sys.argv[1]
    params_file = sys.argv[2]
 
-background_str = " &"  # works on Unix
+background_str = " &"  # run in background; works on Unix
+background_str = ""    # run in foreground; use for reprod_test.sh
 if sys.platform == 'win32':
     background_str = ""
 
