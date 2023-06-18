@@ -27,10 +27,7 @@ for out_dir in ['out_template','out_biorobots','out_cancer_biorobots','out_heter
     print("----------  processing ",out_dir)
     svg_files = glob.glob(f'{dir1}/{out_dir}/snap*.svg')
     svg_files.sort()
-#for filename in glob.iglob(f'{dir1}/out_heterog/snap*.svg'):
-    # for filename in glob.iglob(f'{dir1}/{out_dir}/snap*.svg'):
     for filename in svg_files:
-# for filename in svg_files:
         f = os.path.basename(filename)
         f1 = os.path.join(dir1,out_dir,f)
         f2 = os.path.join(dir2,out_dir,f)
@@ -48,8 +45,11 @@ for out_dir in ['out_template','out_biorobots','out_cancer_biorobots','out_heter
             # ---
             # >    0 days, 0 hours, 1 minutes, and 12.4215 seconds
             if (int(vstr) != 4):   # hard-coded "4"
-                print("====== Warning: not a match!")
-                sys.exit(1)
+                print("======---------------->  Warning: not a match!")
+                userinput = input("\nPress Enter to skip remaining files for this sample:")
+                # print("Username is: " + username)
+                break
+                # sys.exit(1)
 
 # for fname in os.listdir(dir1):
 #     fname1 = os.path.join(dir1, fname)
