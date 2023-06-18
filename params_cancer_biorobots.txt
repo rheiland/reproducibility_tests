@@ -1,0 +1,8 @@
+folder out_cancer_biorobots 
+omp_num_threads 1
+#max_time 14400
+save.full_data.interval 1200
+save.SVG.interval 1200
+#full_data.enable false
+run_it dummy
+#

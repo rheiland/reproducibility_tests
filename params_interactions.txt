@@ -1,0 +1,8 @@
+folder out_interact 
+omp_num_threads 1
+#max_time 64800
+save.full_data.interval 720
+save.SVG.interval 720
+#full_data.enable false
+run_it dummy
+#
