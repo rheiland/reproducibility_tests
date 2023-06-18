@@ -4,5 +4,6 @@ omp_num_threads 1
 save.full_data.interval 720
 save.SVG.interval 720
 #full_data.enable false
+save_interval_after_therapy_start 120
 run_it dummy
 #
