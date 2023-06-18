@@ -1,6 +1,6 @@
-folder out_cancer_biorobots 
+folder out_rules 
 omp_num_threads 1
-#max_time 14400
+#max_time 7200
 save.full_data.interval 720
 save.SVG.interval 720
 #full_data.enable false
