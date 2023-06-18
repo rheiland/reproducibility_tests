@@ -49,10 +49,13 @@ with open(params_file) as f:
             log_file = folder_name + ".log"  
             cmd =  exec_pgm + " " + xml_file_out + " > " + log_file + " " + background_str
             print("----- cmd = ",cmd)
-            # os.system(cmd)   # <------ Execute the simulation
+            #  1) do this to keep in foreground
+            os.system(cmd)   # <------ Execute the simulation
+
+            # 2) or do this to put in background
             # subprocess.Popen([exec_pgm, xml_file_out])
-            with open(log_file,"w") as outf:
-                subprocess.Popen([exec_pgm, xml_file_out],stdout=outf)
+            # with open(log_file,"w") as outf:
+                # subprocess.Popen([exec_pgm, xml_file_out],stdout=outf)
         elif ('.' in key):
             k = key.split('.')
             uep = xml_root
