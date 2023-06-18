@@ -41,7 +41,7 @@ python params_run.py interaction_demo params_worm.txt
 make reset
 make mechano-sample
 make
-python params_run.py project params_worm.txt   # bug? "project"
+python params_run.py project params_mechano.txt   # bug? "project"
 make reset
 make rules-sample
 make
