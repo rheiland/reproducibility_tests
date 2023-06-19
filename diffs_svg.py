@@ -21,8 +21,7 @@ svg_files = Path(dir1).glob(f'{dir1}/out_heterog/snap*.svg')
 
 
 #for filename in glob.iglob(f'{dir1}/snap*.svg'):
-#for d in ['out_template','out_biorobots','out_cancer_biorobots','out_heterog','out_mechano','out_predprey','out_virus_mac','out_worm','out_rules']
-for out_dir in ['out_template','out_biorobots','out_cancer_biorobots','out_heterog','out_predprey','out_virus_mac','out_worm','out_rules']:
+for out_dir in ['out_template','out_biorobots','out_cancer_biorobots','out_heterog','out_predprey','out_virus_mac','out_worm','out_interact','out_rules']:
 #for out_dir in ['out_template']:
     print("----------  processing ",out_dir)
     svg_files = glob.glob(f'{dir1}/{out_dir}/snap*.svg')
