@@ -1,5 +1,6 @@
 ![out_template](out_template.jpg)
 ![out_biorobots](out_biorobots.jpg)
+![out_cancer_bots](cancer_bots_cf_7d10h.png)
 ![out_cancer_biorobots](out_cancer_biorobots.jpg)
 ![out_heterog](out_heterog.jpg)
 ![out_mechano](out_mechano.jpg)
