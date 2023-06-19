@@ -1,6 +1,23 @@
 # reproducibility_tests
 
-in v1.12.0
+Dependencies:
+* PhysiCell source installation
+* most likely a *nix platform
+* matplotlib
+* imagemagick
+
+Example usage:
+```
+# Sequentially build and run each sample project (or most of them, initially)
+# This shell script uses "params_run.py" and a .txt file that's specific for each sample project
+M1P~/dev/PhysiCell_v1.12.0$ sh reprod_test.sh
+
+# Generate final .svg (.jpg) images of sample projects and displaying them side-by-side in .html
+# (note we pipe the customized terminal output from the script into a .html file)
+M1P~/dev/PhysiCell_v1.12.0$ python side_by_side.py ~/dev/PhysiCell_v1.12.0 ~/git/PhysiCell_rheiland_dev_v1_12 >reprod.html
+```
+
+Finding `max_time` config files in v1.12.0
 ```
 $ grep max_time */config/P*.xml
 biorobots/config/PhysiCell_settings.xml:                <max_time units="min">2880</max_time>
