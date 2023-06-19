@@ -37,7 +37,7 @@ python params_run.py worm params_worm.txt
 make reset
 make interaction-sample
 make
-python params_run.py interaction_demo params_worm.txt
+python params_run.py interaction_demo params_interactions.txt
 make reset
 make mechano-sample
 make
