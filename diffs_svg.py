@@ -1,4 +1,7 @@
 # compare diffs between .svg files in different runs
+#  e.g.,
+# python diffs_svg.py ~/dev/PhysiCell_v1.12.0 ~/git/PhysiCell_rheiland_dev_v1_12
+
 
 import os
 import sys
@@ -21,7 +24,7 @@ svg_files = Path(dir1).glob(f'{dir1}/out_heterog/snap*.svg')
 
 
 #for filename in glob.iglob(f'{dir1}/snap*.svg'):
-for out_dir in ['out_template','out_biorobots','out_cancer_biorobots','out_heterog','out_predprey','out_virus_mac','out_worm','out_interact','out_rules']:
+for out_dir in ['out_template','out_biorobots','out_cancer_biorobots','out_heterog','out_mechano','out_predprey','out_virus_mac','out_worm','out_interact','out_rules']:
 #for out_dir in ['out_template']:
     print("----------  processing ",out_dir)
     svg_files = glob.glob(f'{dir1}/{out_dir}/snap*.svg')
