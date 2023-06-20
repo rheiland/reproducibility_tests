@@ -3,8 +3,8 @@
 Dependencies:
 * PhysiCell source installation
 * most likely a *nix platform
-* matplotlib
 * imagemagick
+* maybe later, if we render results other than .svg: matplotlib
 
 Example usage:
 ```
